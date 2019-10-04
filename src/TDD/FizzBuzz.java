@@ -4,13 +4,32 @@ import java.util.Scanner;
 
 public class FizzBuzz {
 
-	public static void main(String[] args) {
-		Scanner keyboard = new Scanner(System.in);
-		int input = keyboard.nextInt();
-		System.out.println(input);
-		int output =  getint(input);
-	}
-	public static int getint(int kb) {
-		return kb;
-	}
-} 
+	
+		Scanner keyboardScanner = new Scanner(System.in);
+		
+		public String getnumber1(int number1) {
+			if((number1%3==0)&(number1%5==0)) {
+				 return FizzBuzze();
+			 }
+			 else if(number1 % 5 == 0) {
+				 return Buzz();
+			 }
+			 else if(number1 % 3 == 0)
+			 {
+				 return Fizz();
+			 }else {
+				 return  Integer.toString(number1);
+			 }
+		}
+		public String Fizz() {
+			return "Fizz";
+		}
+		public String Buzz() {
+			return "Buzz";
+		}
+		
+		public String FizzBuzze(){
+			return "FizzBuzz";
+		}
+
+	} 
