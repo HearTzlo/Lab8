@@ -5,17 +5,15 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TestCaseFizzbuzz {
-	FizzBuzz fizzBuzz = new FizzBuzz();
-	int i = fizzBuzz.getint(1);
-	int i2 = fizzBuzz.getint(2);
+	FizzBuzz fizzbuzz = new FizzBuzz();
+	String input1 = fizzbuzz.getnumber1(1);
+	String wordF ="Fizz";
+	String wordB ="Buzz";
+	String wordFB = "FizzBuzz";
+	
 	@Test
-	void input_is_1_expect_output_1() {
-		assertEquals(1,i);
+	void test1() {
+		assertEquals("1", input1);
 	}
 	
-	@Test //2
-	void input_is_2_expect_output_2() {
-		assertEquals(2,i2);
-	}
-
 }
