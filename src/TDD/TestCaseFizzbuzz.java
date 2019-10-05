@@ -19,7 +19,7 @@ class TestCaseFizzbuzz {
 	
 	@Test
 	void test2() {
-		assertEquals("2", input1);
+		assertEquals("2", input2);
 	}
 	
 }
