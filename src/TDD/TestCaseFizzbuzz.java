@@ -11,6 +11,7 @@ class TestCaseFizzbuzz {
 	String input3 = fizzbuzz.getnumber1(3);
 	String input4 = fizzbuzz.getnumber1(4);
 	String input5 = fizzbuzz.getnumber1(5);
+	String input6 = fizzbuzz.getnumber1(6);
 	String wordF ="Fizz";
 	String wordB ="Buzz";
 	String wordFB = "FizzBuzz";
@@ -36,5 +37,11 @@ class TestCaseFizzbuzz {
 	void test5() {
 		assertEquals(wordB,input5);
 	}
+	
+	@Test
+	void test6() {
+		assertEquals(wordF,input6);
+	}
+	
 	
 }
